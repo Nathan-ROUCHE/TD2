@@ -10,8 +10,16 @@ int maximum(int *t, int n)
   return m;
 }
 
+int sommeproduit(int a, int b, int *sp, int *pp)
+{
+  *sp = a+b;
+  *pp = a*b;
+}
+
 int main(void)
 {
-  printf("Hello\n");
+  int s, p;
+  sommeproduit(12, 13, &s, &p);
+  printf("s: %i; p: %i\n", s, p);
   return 0;
 }
